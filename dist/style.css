@@ -62,7 +62,7 @@ button::before,
   left: 0;
   background-color: rgba(255, 255, 255, 0.25);
   opacity: 0;
-  transition: opacity 150ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 button:hover::before,
 .button:hover::before {
@@ -82,7 +82,7 @@ button:hover::before,
 }
 
 .header nav {
-  padding: 24px;
+  padding: 1.0625rem 1.5rem;
 }
 .header__logo img {
   width: 8.8125rem;
@@ -90,18 +90,38 @@ button:hover::before,
 }
 .header__menu > span {
   display: block;
-  width: 26px;
-  height: 3px;
-  background-color: hsl(233, 26%, 24%);
+  width: 1.625rem;
+  height: 0.1875rem;
+  background-color: hsl(220, 16%, 96%);
 }
 .header__menu > span:not(:last-child) {
-  margin-bottom: 3px;
+  margin-bottom: 0.1875rem;
 }
 .header__links a {
+  position: relative;
   font-size: 0.875rem;
+  transition: color 300ms ease-in-out;
 }
 .header__links a:not(:last-child) {
   margin-right: 2rem;
+}
+.header__links a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.3125rem;
+  left: 0;
+  right: 0;
+  bottom: -1.875rem;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.header__links a:hover, .header__links a:focus {
+  color: hsl(233, 26%, 24%);
+}
+.header__links a:hover::before, .header__links a:focus::before {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
