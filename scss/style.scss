@@ -1,2 +1,4 @@
-@use 'variables';
-@use 'globals';
+@import './variables';
+@import './mixins.scss';
+@import './globals';
+@import './header';

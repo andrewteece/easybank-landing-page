@@ -13,5 +13,82 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
+  color: $clr-neutral-500;
   line-height: 1.5;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: $clr-neutral-500;
+}
+
+// Flex Utility
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// Buttons
+
+button,
+.button {
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $clr-primary-400,
+    $clr-primary-300
+  );
+  padding: 0.875rem 2.1875rem;
+  border: 0;
+  border-radius: 3.125rem;
+  color: $clr-neutral-100;
+  font-size: $fs-300;
+  font-weight: $fw-700;
+  transition: opacity 300ms ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+// Visibility
+
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
 }
