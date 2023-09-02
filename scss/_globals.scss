@@ -15,6 +15,14 @@ body {
   font-family: 'Public Sans', sans-serif;
   color: $clr-neutral-500;
   line-height: 1.5;
+
+  @include breakpoint-up(large) {
+    font-size: $fs-400;
+  }
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 a,
@@ -63,6 +71,21 @@ a:hover {
     @include breakpoint-up(large) {
       padding-top: 6rem;
     }
+  }
+
+  &--pr {
+    padding-right: 1.5rem;
+  }
+  &--pb {
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--pl {
+    padding-left: 1.5rem;
   }
 }
 
