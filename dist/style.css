@@ -55,6 +55,7 @@ body {
   font-family: "Public Sans", sans-serif;
   color: hsl(233, 8%, 62%);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 @media (min-width: 64em) {
   body {
@@ -309,6 +310,9 @@ button:hover::before,
   opacity: 1;
 }
 
+.hero {
+  background-color: hsl(0, 0%, 98%);
+}
 @media (min-width: 64em) {
   .hero .container {
     display: flex;
@@ -481,7 +485,7 @@ button:hover::before,
   padding: 1.875rem 1.875rem 2.5rem 1.875rem;
   color: hsl(233, 8%, 62%);
 }
-@inclue breakpoint-up(medium) {
+@media (min-width: 40em) {
   .article__text {
     padding: 1.875rem 1.5rem;
   }

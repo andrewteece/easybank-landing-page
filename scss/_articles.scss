@@ -36,7 +36,7 @@
     padding: 1.875rem 1.875rem 2.5rem 1.875rem;
     color: $clr-neutral-500;
 
-    @inclue breakpoint-up(medium) {
+    @include breakpoint-up(medium) {
       padding: 1.875rem 1.5rem;
     }
   }
