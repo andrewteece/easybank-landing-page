@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/andrewteece/easybank-landing-page/tree/main)
-- Live Site URL: [Add live site URL here](https://stellar-dodol-0da8ee.netlify.app/)
+- Solution URL: (https://github.com/andrewteece/easybank-landing-page/tree/main)
+- Live Site URL: (https://stellar-dodol-0da8ee.netlify.app/)
 
 ### Built with
 
@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://github.com/andrewteece)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/andrewteece)
+- Website - (https://github.com/andrewteece)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/andrewteece)
